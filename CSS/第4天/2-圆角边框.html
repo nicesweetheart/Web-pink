@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            border-radius: 40px;
+            background-color: pink;
+        }
+
+        .yuan {
+            width: 300px;
+            height: 300px;
+            /* 圆形：radius取值为正方形盒子边长的一半 */
+            /* border-radius: 150px; */
+            /* 取值除不尽可用百分数 */
+            border-radius: 50%;
+            background-color: pink;
+            margin-top: 100px;
+            display: inline-block;
+        }
+
+        .yjjx{
+            width: 300px;
+            height: 100px;
+            /* 圆角矩形：radius取值为高度的一半 */
+            border-radius: 50px;
+            background-color: pink;
+            display: inline-block;
+        }
+        .btyj{
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 20px 30px 40px 60px; */
+            /* 单独一个角落 */
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>圆角边框</div>
+    <div class="yuan">圆</div>
+    <div class="yjjx">圆角矩形</div>
+    <div class="btyj">设置不同的圆角</div>
+</body>
+
+</html>

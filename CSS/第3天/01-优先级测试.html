@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 继承：如果自己没有继承父级。如果已有不继承 ，所以此处不生效*/
+        body {
+            color: red !important;
+        }
+
+        div {
+            color: yellow;
+            /* !important可以把权限提到最高 */
+        }
+
+        /* .green{
+            color: green !important;
+        } */
+        #orange {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 当一个标签有多个选择器和样式冲突时，定位越精确，优先级越高 -->
+    <div class="green" id="orange" style="color: pink;">测试优先级</div>
+</body>
+
+</html>

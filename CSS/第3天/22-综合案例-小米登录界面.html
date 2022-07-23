@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* 不应该写在全局，容易造成全局污染 */
+            /* box-sizing: border-box; */
+        }
+
+        .box0 {
+            max-width: 334px;
+            height: 339px;
+            /* background-color: pink; */
+            /* border: 1px solid #000; */
+            margin: 82px auto;
+            overflow: hidden;
+        }
+
+        .box2 {
+            width: 49px;
+            height: 49px;
+            background: red url(./images/mi-logo.png);
+            margin: 0 auto;
+        }
+
+        .box0 h2 {
+            height: 77px;
+            font-size: 26px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 35px;
+            /* background-color: red; */
+        }
+        
+        input {
+            width: 334px;
+            height: 50px;
+            /* background-color: blue; */
+            display: block;
+            /* margin-top: 15px; */
+            margin-bottom: 15px;
+            color: #eee;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+
+        }
+
+        button {
+            width: 334px;
+            height: 50px;
+            background-color: #ff4c00;
+            display: block;
+            margin-top: 15px;
+            color: #fff;
+            /* 不推荐此类写法 */
+            /* border: 0 solid #000; */
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box0">
+        <div class="box2"></div>
+        <h2>小米账号登录</h2>
+        <input type="text" placeholder="邮箱/手机/小米ID" >
+        <input type="password" placeholder="输入密码">
+        <button>登录</button>
+    </div>
+</body>
+
+</html>
